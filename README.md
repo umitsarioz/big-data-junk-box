@@ -1,7 +1,8 @@
-# big-data-junk-box
-I created a big data junk box. It consists of some modules about datasource operations, pyspark operations, io operations etc. Check readme.md and codes for details.
+# 🧰 Big Data Junk Box 
+I created a big data junk box. It consists of some modules about datasource operations, pyspark operations, io operations etc.I am trying to update and add new codes in time.
+Check readme.md and codes for details.
 
-> In this module all submodules need to logger object. You can create logger object easily using with utils.logger.LogHelper submodule.
+> <b> In this module all submodules need to logger object. You can create logger object easily using with utils.logger.LogHelper submodule.</b>
 # DataSource 
 
 ## Databases
