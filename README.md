@@ -3,12 +3,10 @@ I created a big data junk box. It consists of some modules about datasource oper
 Check readme.md and codes for details.
 
 > <b> In this module all submodules need to logger object. You can create logger object easily using with utils.logger.LogHelper submodule.</b>
-# DataSource 
 
 ## Databases
 
 You can use Cassandra, Mongo and PostgreSQL modules in db folder.
-
 
 
 <table>
@@ -273,3 +271,103 @@ You can use Cassandra, Mongo and PostgreSQL modules in db folder.
         </tr>
 
 </table>
+
+## Utils
+
+In this directory, there are some useful modules for connect spark, logging, decorators, mail operations etc. 
+
+<table>
+    <thead>
+        <tr>
+            <th> Filesource</th>
+            <th> Module Filepath</th>
+            <th> Object Name</th>
+            <th> Functions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td colspan="4"></td> </tr>
+        <tr>
+            <td rowspan=4>Log Operations</td>
+            <td rowspan=4>utils.logger.py</td>
+            <td rowspan=4>LogHelper</td>
+            <td>Create logger object</td>
+        </tr>
+        <tr>
+            <td>Change log level</td>
+        </tr>
+        <tr>
+            <td>Get log level</td>
+        </tr>
+        <tr>
+            <td>Get logger object</td>
+        </tr>
+    <tr><td colspan="4"></td> </tr>
+            <tr>
+                <td rowspan=7>Spark</td>
+                <td rowspan=7>utils.spark.py</td>
+                <td rowspan=7>SparkHelper</td>
+                <td>Set Connection Parameters</td>
+            </tr>
+            <tr>
+                <td>Get Connection Parameters</td>
+            </tr>
+            <tr>
+                <td>Start Spark Session</td>
+            </tr>
+            <tr>
+                <td>Stop Spark Session</td>
+            </tr>
+           <tr>
+                <td>Clear session cache</td>
+            </tr>
+           <tr>
+                <td>Read file</td>
+            </tr>
+           <tr>
+                <td>Write file</td>
+            </tr>
+    <tr><td colspan="4"></td> </tr>
+            <tr>
+                <td rowspan=3>Mail Operations</td>
+                <td rowspan=3>utils.mailops.py</td>
+                <td rowspan=3>MailHelper</td>
+                <td>Set Sending Parameters</td>
+            </tr>
+            <tr>
+                <td>Get Sending Parameters</td>
+            </tr>
+            <tr>
+                <td>Send Email</td>
+            </tr>
+    <tr>
+        <td colspan="4"></td> </tr>
+        <tr>
+                <td rowspan=4>Git</td>
+                <td rowspan=4>utils.git.py</td>
+                <td rowspan=4>GitHelper</td>
+                <td>Add files</td>
+            </tr>
+            <tr>
+                <td>Add commit</td>
+            </tr>
+            <tr>
+                <td>Push Files</td>
+            </tr>
+            <tr>
+                <td>Find file in git commit history</td>
+            </tr>
+    <tr><td colspan="4"></td> </tr>
+        <tr>
+                <td rowspan=2>Decorators</td>
+                <td rowspan=2>utils.decorators.py</td>
+                <td rowspan=2>Decorators</td>
+                <td>Timer</td>
+            </tr>
+            <tr>
+                <td>Retry</td>
+            </tr>
+    <tr><td colspan="4"></td> </tr>
+</tbody>
+</table>
+

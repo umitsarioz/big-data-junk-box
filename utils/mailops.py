@@ -118,7 +118,7 @@ class MailHelper:
         """Get the sender's email address and mail server."""
         return {'mail_server:': self._mail_server, 'mail_from': self._mail_from}
 
-    def send_scenario_mail(self, mail_to: List[str], mail_cc: List[str], mail_bcc: List[str], mail_subject: str,
+    def send_email(self, mail_to: List[str], mail_cc: List[str], mail_bcc: List[str], mail_subject: str,
                            mail_text: str, files: List[str] = None):
         """
         Send a scenario-based email.
