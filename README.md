@@ -176,3 +176,99 @@ You can use Cassandra, Mongo and PostgreSQL modules in db folder.
     </tbody>
 </table>
 
+## IO : HDFS and SFTP 
+
+<table>
+  <thead>
+        <tr>
+            <th> Datasource</th>
+            <th> Module Filepath</th>
+            <th> Object Name</th>
+            <th> Functions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=15>HDFS</td>
+            <td rowspan=15>io.hdfs.py</td>
+            <td rowspan=15>HDFSHelper</td>
+            <td>Set SparkSession Object</td>
+        </tr>
+        <tr>
+            <td>Set Connection Parameters for HDFS Client</td>
+        </tr>
+       <tr>
+            <td>Set Connection Parameters for PySpark HDFS Gateway URI</td>
+        </tr>
+        <tr>
+            <td>Check file exist</td>
+        </tr>
+        <tr>
+            <td>Delete file</td>
+        </tr>
+        <tr>
+            <td>Get all file details in a directory</td>
+        </tr>
+        <tr>
+            <td>Get all filenames in a directory</td>
+        </tr>
+        <tr>
+            <td>Read file using PySpark</td>
+        </tr>
+       <tr>
+            <td>Write file using PySpark</td>
+        </tr>
+       <tr>
+            <td>Delete old files for given datetime range</td>
+        </tr>
+       <tr>
+            <td>Create a Directory using HDFSClient</td>
+        </tr>
+       <tr>
+            <td>Upload file using HDFSClient</td>
+        </tr>
+               <tr>
+            <td>Download file using HDFSClient</td>
+        </tr>
+                <tr>
+            <td>Read file using HDFSClient</td>
+        </tr>
+       <tr>
+            <td>Write file using HDFSClient</td>
+        </tr>
+<tr><td colspan="4"></td> </tr>
+        <tr>
+            <td rowspan=15>SFTP</td>
+            <td rowspan=15>io.sftp.py</td>
+            <td rowspan=15>SFTPHelper</td>
+            <td>Set Connection Parameters</td>
+        </tr>
+        <tr>
+            <td>Get Connection Parameters</td>
+        </tr>
+       <tr>
+            <td>Get Transport Object</td>
+        </tr>
+       <tr>
+            <td>Get SFTP Object</td>
+        </tr>
+       <tr>
+            <td>Open SFTP Connection</td>
+        </tr>
+       <tr>
+            <td>Close SFTP Connection</td>
+        </tr>
+       <tr>
+            <td>Connect SFTP</td>
+        </tr>
+       <tr>
+            <td>Disconnect SFTP</td>
+        </tr>
+       <tr>
+            <td>Get files details for given filepath</td>
+        </tr>
+       <tr>
+            <td>Read file </td>
+        </tr>
+
+</table>
