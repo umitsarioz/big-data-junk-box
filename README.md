@@ -60,7 +60,6 @@ You can use Cassandra, Mongo and PostgreSQL modules in db folder.
             <td>Set SparkSession</td>
         </tr>
     <tr>    <td class="bg" colspan=4>
-        <hr class="bg">
     </td></tr>
     <tr>
             <td rowspan=18>Mongo</td>
@@ -121,7 +120,6 @@ You can use Cassandra, Mongo and PostgreSQL modules in db folder.
         </tr>
     <tr>   
     <td class="bg" colspan=4>
-        <hr class="bg">
     </td>
     </tr>
     <tr>
