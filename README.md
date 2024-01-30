@@ -1,3 +1,24 @@
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+thead{
+  background-color: rgba(100, 200, 5, 0.3);
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.bg{
+background-color: grey;
+}
+
+
+</style>
+
 # big-data-junk-box
 I created a big data junk box. It consists of some modules about datasource operations, pyspark operations, io operations etc. Check readme.md and codes for details.
 
@@ -176,24 +197,3 @@ You can use Cassandra, Mongo and PostgreSQL modules in db folder.
     </tbody>
 </table>
 
-
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-thead{
-  background-color: rgba(100, 200, 5, 0.3);
-}
-
-tr {
-  border-bottom: 1px solid #ddd;
-}
-
-.bg{
-background-color: grey;
-}
-
-
-</style>
