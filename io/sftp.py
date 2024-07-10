@@ -3,7 +3,7 @@ import logging
 import pandas as pd
 from os import path
 from datetime import datetime
-
+from io import StringIO
 
 class SFTPHelper:
     def __init__(self, logger: logging.Logger, host: str = None, user_name: str = None, password: str = None):
@@ -152,9 +152,10 @@ class SFTPHelper:
             df = pd.DataFrame.from_records(files_names_all)
 
         return df.dropna()
-
+    
     def read_file(self, filepath: str, file_type: str = 'csv', sep: str = ',', encoding: str = 'ISO-8859-9',
                   low_memory: bool = False) -> pd.DataFrame:
+        
         """
         Reads a file from the SFTP server.
 
@@ -172,11 +173,12 @@ class SFTPHelper:
 
         df = pd.DataFrame()
         try:
-            with self._sftp.open(filepath) as f:
-                f.prefetch()
+            with self._sftp.open(filepath,mode='r',bufsize=-1) as f:
                 if file_type == 'csv':
-                    df = pd.read_csv(f, sep=sep, low_memory=low_memory, encoding=encoding)
+                    data = StringIO(f.read().decode(encoding))
+                    df = pd.read_csv(data, sep=sep, low_memory=low_memory, encoding=encoding)
                 elif file_type == 'parquet':
+                    f.prefetch()
                     df = pd.read_parquet(f)
                 else:
                     raise Exception("Undefined file type: ", file_type)
